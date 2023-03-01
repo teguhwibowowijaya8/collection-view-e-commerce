@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemColorCell" customModule="e_commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-Yj-ZvY">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A2-aE-f2V">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5A2-aE-f2V" firstAttribute="leading" secondItem="iCs-Yj-ZvY" secondAttribute="leading" id="Jbc-NV-eUa"/>
+                            <constraint firstAttribute="trailing" secondItem="5A2-aE-f2V" secondAttribute="trailing" id="W4P-T8-jBU"/>
+                            <constraint firstItem="5A2-aE-f2V" firstAttribute="top" secondItem="iCs-Yj-ZvY" secondAttribute="top" id="g10-Yy-lY9"/>
+                            <constraint firstAttribute="bottom" secondItem="5A2-aE-f2V" secondAttribute="bottom" id="pYe-Tz-qTF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="iCs-Yj-ZvY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7H9-GD-UvU"/>
+                <constraint firstAttribute="bottom" secondItem="iCs-Yj-ZvY" secondAttribute="bottom" id="7RM-2O-5F3"/>
+                <constraint firstItem="iCs-Yj-ZvY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JHq-mR-9Q8"/>
+                <constraint firstAttribute="trailing" secondItem="iCs-Yj-ZvY" secondAttribute="trailing" id="hWG-Vp-4Xb"/>
+            </constraints>
+            <connections>
+                <outlet property="colorView" destination="iCs-Yj-ZvY" id="bjs-uo-xAw"/>
+                <outlet property="plusButton" destination="5A2-aE-f2V" id="m2a-Nn-jbm"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
